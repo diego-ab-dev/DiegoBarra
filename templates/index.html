@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTalen Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/home">
+                <img src="{% static 'images/logo techtalent.png' %}" alt="logo tech talent" class="img-logonav">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-auto mx-auto" style="width: 900px;">
+                  <li class="nav-item">
+                    <a class="nav-link custom-text-color" aria-current="page" href="/home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link custom-text-color" aria-current="page" href="/personal">Personal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link custom-text-color" aria-current="page" href="/clientes">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link custom-text-color" aria-current="page" href="/egresados">Egresados</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link custom-text-color" aria-current="page" href="#reseña">Reseña</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link custom-text-color" aria-current="page" href="#mivi">Visión/Misión</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link custom-text-color" aria-current="page" href="#redes">Redes</a>
+                  </li>
+                  <li class="nav-item">
+                      <p style="margin-left: 140px; margin-top: 10px; font-size: small; color: aliceblue;">Teléfono de contacto: + 56 9 7788 9198</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+    <a name="home"></a>
+    <div class="carruselfotos container-fluid" >
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="border-radius: 20px;">
+          <div class="carousel-item active">
+            <img src="{% static 'images/empresa.jpg' %}" class="d-block w-100" alt="imagen empresa">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/reclu.jpg' %}" class="d-block w-100" alt="imagen reclu">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/grupo.jpg' %}" class="d-block w-100" alt="imagen grupo" >
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="car1 carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="car1 carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <br><br><br>
+    <h1 class="fs-2 text-center custom-text-color" style="background-color: #0b1119; border-radius: 20px; margin-left: 80px ;margin-right: 80px;">Visita nuestras secciones...</h1>
+    <br><br>
+    <section class="articles">
+      <article>
+        <div class="article-wrapper" style="background-color:#b8c9df;">
+          <figure>
+            <img src="{% static 'images/personal.jpg' %}" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Personal</h2>
+            <p>
+              Explora a nuestro equipo de expertos en reclutamiento y desarrollo tecnológico, dedicados a conectar talento con empresas líderes del sector IT.
+            </p>
+            <a href="/personal" class="read-more">
+              Visitar <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article>
+    
+        <div class="article-wrapper" style="background-color:#b8c9df;">
+          <figure>
+            <img src="{% static 'images/clientes.jpg' %}" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Clientes</h2>
+            <p>
+              Descubre las compañías que confían en nosotros para encontrar a los mejores profesionales de tecnología, desde startups hasta corporaciones globales.
+            </p>
+            <a href="/clientes" class="read-more">
+              Visitar <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article>
+    
+        <div class="article-wrapper" style="background-color:#b8c9df;">
+          <figure>
+            <img src="{% static 'images/egresados.jpeg' %}" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Egresados</h2>
+            <p>
+              Conoce a nuestros egresados, profesionales capacitados que han encontrado su lugar en la industria tecnológica gracias a TechTalent Connect.
+            </p>
+            <a href="/egresados" class="read-more">
+              Visitar <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+    
+    <a name="reseña"></a>
+<br><br><br>
+<h1 class="fs-2 text-center custom-text-color" style="background-color: #0b1119; border-radius: 20px; margin-left: 80px ;margin-right: 80px;">Reseña de la Empresa</h1>
+<br>
+<div class="wrap animate pop">
+	<div class="overlay">
+		<div class="overlay-content animate slide-left delay-2">
+			<h1 class="animate slide-left pop delay-4" style="font-size: 5.25vmin; text-align: center; color: white;">TechTalent Connect</h1>
+			<p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem; font-size: max(10pt, 2.5vmin); line-height: 1.4; color: #ffffff; margin-bottom: 1.5rem;">Reseña <em></em></p>
+		</div>
+		<div class="image-content animate slide delay-5"></div>
+		<div class="dots animate">
+			<div class="dot animate slide-up delay-6"></div>
+			<div class="dot animate slide-up delay-7"></div>
+			<div class="dot animate slide-up delay-8"></div>
+		</div>
+	</div>
+	<div class="text">
+		<p style="font-size: max(10pt, 2.5vmin); line-height: 1.4; color: #000000; margin-bottom: 1.5rem;"><img class="inset" src="{% static 'images/strella.jpg' %}" alt="" /><em>TechTalent Connect</em> es una empresa líder en reclutamiento tecnológico que se especializa en unir a empresas innovadoras con profesionales 
+      altamente calificados en el área IT. Nuestro enfoque personalizado nos permite identificar el talento adecuado para cada proyecto, abarcando 
+      desde startups hasta grandes corporaciones.</p>
+		<p style="font-size: max(10pt, 2.5vmin); line-height: 1.4; color: #5777b1; margin-bottom: 1.5rem;">Con un equipo de expertos en recursos humanos y tecnología, ofrecemos una experiencia de reclutamiento 
+      eficiente y adaptada a las necesidades del mercado.</p>
+		<p style="font-size: max(10pt, 2.5vmin); line-height: 1.4; color: #000000; margin-bottom: 1.5rem;">Además, contamos con programas de formación y desarrollo profesional para nuestros egresados, 
+      garantizando su preparación para enfrentar los desafíos del sector. La calidad, la rapidez y la atención personalizada son los pilares que nos 
+      distinguen.</p>
+	</div>
+</div>
+
+
+
+<br><br>
+
+<a name="mivi"></a>
+<br><br>
+<h1 class="fs-2 text-center custom-text-color" style="background-color: #0b1119; border-radius: 20px; margin-left: 80px ;margin-right: 80px;">Nuestra Visión y Misión</h1>
+<br><br>
+
+<div class="books-container">
+  <div class="book"> 
+    <p class="fst-italic text-center">Ser la empresa líder en reclutamiento tecnológico a nivel global, reconocida por nuestra capacidad para identificar y desarrollar el talento más innovador del sector IT. Aspiramos a crear una comunidad donde empresas y profesionales crezcan juntos, impulsando el avance tecnológico y el éxito mutuo.</p>
+    <div class="cover">
+        <p style="font-size: 20px; font-weight: bolder;">Visión</p>
+    </div>
+  </div>
+
+  <div class="book">
+    <p class="fst-italic text-center">Nuestra misión en TechTalent Connect es conectar a empresas del sector tecnológico con profesionales altamente calificados, ofreciendo soluciones de reclutamiento personalizadas y programas de desarrollo que impulsen el crecimiento de ambos. Nos esforzamos por ayudar a nuestros clientes a encontrar el mejor talento y a nuestros egresados a desarrollar sus carreras en el dinámico mundo de la tecnología.</p>
+    <div class="cover">
+        <p style="font-size: 20px; font-weight: bolder;">Misión</p>
+    </div>
+  </div>
+</div>
+
+
+<br><br><br><br>
+<div class="carruselfotos container-fluid">
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/imagen1.jpg' %}" class="d-block w-100" alt="..." style="border-radius: 100px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Experiencia...</h5>
+        <p>Contamos con profesionales con años de experiencia.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/imagen2.jpg' %}" class="d-block w-100" alt="..." style="border-radius: 100px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Confianza...</h5>
+        <p>Contamos con opiniones y reseñas de clientes y egresados.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/imagen3.jpg' %}" class="d-block w-100" alt="..." style="border-radius: 100px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>La mas alta tecnología...</h5>
+        <p>Nuestra empresa cuenta con la mejor tecnología.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<a name="redes"></a>
+<br><br><br>
+<h1 class="fs-2 text-center custom-text-color" style="background-color: #0b1119; border-radius: 20px; margin-left: 80px ;margin-right: 80px;">Nuestras Redes Sociales</h1>
+<div class="container-fluid text-center" style="padding-left: 20%;">
+    <div class="row gx-5">
+      <div class="col">
+       <div class="p-3">
+        <a href="https://www.instagram.com" target="_blank" class="card-link">
+          <div class="card">
+              <div class="icon">
+                  <img src="{% static 'images/igfooter.png' %}" alt="Instagram">
+              </div>
+              <strong style="color: aliceblue;"> Instagram </strong>
+              <div class="card__body">
+                  @tech_talent
+              </div>
+              <span>Síguenos</span>
+          </div>
+      </a>
+       </div>
+      </div>
+      <div class="col">
+        <div class="p-3">
+          <a href="https://www.facebook.com" target="_blank" class="card-link">
+            <div class="card">
+                <div class="icon">
+                    <img src="{% static 'images/facefooter.png' %}" alt="Facebook">
+                </div>
+                <strong style="color: aliceblue;"> Facebook </strong>
+                <div class="card__body">
+                    TechTalent Solutions
+                </div>
+                <span>Síguenos</span>
+            </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <br><br><br>
+
+  <footer>
+    <div class="foot container-fluid custom-text-color">
+      <div class="row row-cols-4">
+        <div class="col" style="padding-top: 30px;">
+          <a href="/home">
+            <img src="{% static 'images/logo techtalent.png' %}" class="img-fluid" alt="logo sd" style="height: 90px;">
+          </a>
+          <br><br>
+          <p><small>
+            TechTalent Connect es una empresa de reclutamiento enfocada en el sector tecnológico, 
+              conectando a empresas con talento especializado en áreas como desarrollo de software y 
+              ciberseguridad. También ofrece programas de formación para ayudar a los profesionales a 
+              destacar en sus carreras IT. 
+          </small></p>
+          <br><br>
+        </div>
+        <div class="col text-center" style="padding-top: 45px;">
+          <h5>Enlaces Rápidos:</h5>
+          <p>
+            <a class="footerli custom-text-color" aria-current="page" href="/home">Home</a>
+          </p>
+          <p>
+            <a class="footerli custom-text-color" aria-current="page" href="/personal">Personal</a>
+          </p>
+          <p>
+          <a class="footerli custom-text-color" aria-current="page" href="/clientes">Clientes</a>
+          </p>
+          <p>
+            <a class="footerli custom-text-color" aria-current="page" href="/egresados">Egresados</a>
+          </p>
+          <p>
+            <a class="footerli custom-text-color" aria-current="page" href="#reseña">Reseña</a>
+          </p>
+          <p>
+            <a class="footerli custom-text-color" aria-current="page" href="#mivi">Visión/Misión</a>
+          </p>
+          <p>
+            <a class="footerli custom-text-color" aria-current="page" href="#redes">Redes</a>
+          </p>
+        </div>
+        <br><br><br>
+        <div class="redes col text-center" style="padding-top: 45px;">
+          <h5>Redes Sociales:</h5>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="{% static 'images/igfooter.png' %}" alt="" style="width: 40px; height: 40px;">
+          </a>
+          <br>
+          <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+            <img src="{% static 'images/facefooter.png' %}" alt="" style="width: 40px; height: 40px;">
+          </a>
+        </div>
+      </div>
+    </div>
+</footer>  
+</body>
+</html>
